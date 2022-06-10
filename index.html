@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deluxe Carwash</title>
+    <link href="css/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="Imagenes/favicon.png" />
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6d4a820be5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="logo">
+        <a href="index.html"
+          ><img src="Imagenes/logo-carwash.png" alt="Logo carwash"
+        /></a>
+      </h1>
+
+      <div class="redes">
+        <a><i class="fa-brands fa-facebook-f"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a><i class="fa-brands fa-whatsapp"></i></a>
+        <a><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <button class="button-primary">Cotizar</button>
+    </header>
+    <div class="top-bar">
+      <button
+        id="burger"
+        class="hamburger hamburger--collapse"
+        type="button"
+        onclick="toggleMenu()"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <nav id="menu-mob" class="menu menu-mob">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contactanos</a></li>
+      </ul>
+    </nav>
+    <picture>
+      <source srcset="Imagenes/banner-xg.png" media="(min-width: 800px)" />
+      <source srcset="Imagenes/banner-md.png" media="(min-width: 600px)" />
+      <img src="Imagenes/banner-xs.png" alt="banner carwash" />
+    </picture>
+    <main>
+      <div id="darkbg" class="dark-bg" onclick="toggleMenu()"></div>
+      <section id="servicios">
+        <div class="contenedor">
+          <h3>Lavado de salón</h3>
+          <img src="Imagenes/lavado.jpg" />
+          <table>
+            <tr>
+              <th>Auto</th>
+              <th>Camioneta</th>
+              <th>Minivan</th>
+              <th>Van</th>
+            </tr>
+            <tr>
+              <td>s/.<span>220</span></td>
+              <td>s/.<span>250</span></td>
+              <td>s/.<span>270</span></td>
+              <td>s/.<span>380</span></td>
+            </tr>
+          </table>
+          <ul>
+            <li>Lavado exterior de carrocería con shampoo</li>
+            <li>Secado con ante sonax</li>
+            <li>Lavado de llantas y guardarnos</li>
+            <li>Aire comprimido para exteriores e interiores</li>
+            <li>Silicona a guardafango y partes plásticas</li>
+            <li>Aspirado integral de salón</li>
+            <li>Lavado de alfombra, maletera y cinturones</li>
+          </ul>
+        </div>
+        <div class="contenedor">
+          <h3>Desinfección</h3>
+          <img src="Imagenes/desinfeccion.jpg" />
+          <table>
+            <tr>
+              <th>Auto</th>
+              <th>Camioneta</th>
+              <th>Minivan</th>
+              <th>Van</th>
+            </tr>
+            <tr>
+              <td>s/.<span>250</span></td>
+              <td>s/.<span>280</span></td>
+              <td>s/.<span>310</span></td>
+              <td>s/.<span>420</span></td>
+            </tr>
+          </table>
+          <ul>
+            <li>
+              Limpieza intensiva de todas los plásticos (consola, paneles de
+              puertas, timón, etc.)
+            </li>
+            <li>Limpieza de plásticos interiores y lunas</li>
+            <li>Siliconedo de plásticos y vinílicos</li>
+            <li>Limpieza y siliconeado de tablero</li>
+            <li>Limpieza de pisos y siliconeado</li>
+            <li>Renovador y silicona a neumáticos</li>
+          </ul>
+        </div>
+        <div class="contenedor">
+          <h3>Tratamiento de Pintura</h3>
+          <img src="Imagenes/pintura.jpg" />
+          <table>
+            <tr>
+              <th>Auto</th>
+              <th>Camioneta</th>
+              <th>Minivan</th>
+              <th>Van</th>
+            </tr>
+            <tr>
+              <td>s/.<span>220</span></td>
+              <td>s/.<span>250</span></td>
+              <td>s/.<span>270</span></td>
+              <td>s/.<span>380</span></td>
+            </tr>
+          </table>
+          <p>
+            Revitaliza el color de la pintura, elimina rayas ligeras y micro
+            rayas, suaviza la superficie con lo cuál el polvo no se adhiere y
+            queda brillante como un espejo (literalmente). incluye:
+          </p>
+          <ul>
+            <li>Lavado del exterior del vehiculo</li>
+            <li>Secado con ante sonax</li>
+            <li>Descontaminación de carrocería con wurth</li>
+          </ul>
+        </div>
+      </section>
+      <section id="consulta">
+        <div>
+          <h3>¡Calidad al mejor precio!</h3>
+          <p>
+            Te brindamos el mejor servicio al mejor precio, realiza tu consulta
+            sin costo
+          </p>
+        </div>
+        <button class="button-primary">Consultar</button>
+      </section>
+      <section id="detalle">
+        <div class="detalle_servicios">
+          <p>
+            Realizados diversos servicios entre: Stores, Coches, Asientos de
+            bebe <br />
+            También realizamos servicio de lavado a domicilio que consta de
+            aspirado con máquina profesional eliminando así todo polvo
+            existente, desinfección del 99.8% de bacterias, ácaros y otros
+            agentes patógenos con máquina de rayos UV y máquina especial de
+            vapor, lavado con espuma seca y desmanchadores especiales no tóxicos
+            y ecológicos
+          </p>
+          <img src="Imagenes/servicios-varios.jpg" />
+        </div>
+        <div class="detalle_servicios">
+          <img class="img2" src="Imagenes/servicios-otros.jpg" />
+          <p class="detalle2">
+            El servicio de lavado a domicilio consta de aspirado con máquina
+            profesional eliminando así todo polvo existente, desinfección del
+            99.8% de bacterias, ácaros y otros agentes patógenos con máquina de
+            rayos UV y máquina especial de vapor, lavado con espuma seca y
+            desmanchadores especiales no tóxicos y ecológicos.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="prefooter">
+      <div class="pie">
+        <img src="Imagenes/logo-carw.png" alt="Logo Deluxe Carwash" />
+        <p>
+          Deja el cuidado de tu auto en manos de especialistas de 1er nivel en
+          el cuidado integral de vehículos. <br />
+          Más de 10 años de experiencia en el mercado a nivel local.
+        </p>
+      </div>
+      <div class="pie">
+        <h3>SERVICIOS</h3>
+        <ul>
+          <a href="#">
+            <li>Servicios Básicos</li>
+          </a>
+          <a href="#">
+            <li>Limpieza Interior</li>
+          </a>
+          <a href="#">
+            <li>Limpieza Exterior</li>
+          </a>
+          <a href="#">
+            <li>Paquetes de Limpieza</li>
+          </a>
+          <a href="#">
+            <li>Tratamientos de Pintura</li>
+          </a>
+          <a href="#">
+            <li>Tratamiento cerámico</li>
+          </a>
+          <a href="#">
+            <li>Planchado y Pintura</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="pie">
+        <h3>MENÚ</h3>
+        <ul>
+          <a href="index.html">
+            <li>Inicio</li>
+          </a>
+          <a href="nosotros.html">
+            <li>Nosotros</li>
+          </a>
+          <a href="servicios.html">
+            <li>Servicios</li>
+          </a>
+          <a href="contacto.html">
+            <li>Contáctanos</li>
+          </a>
+        </ul>
+      </div>
+      <div class="pie">
+        <h3>CONTACTO</h3>
+        <span><i class="fa-solid fa-location-dot"></i>Dirección</span>
+        <p>
+          Av. Salaverry 757-San Isidro <br />
+          (Al costado del Banco BCP)
+        </p>
+        <span
+          ><i class="fa-solid fa-clock-rotate-left"></i>Horarios de
+          Atención</span
+        >
+        <p>
+          Lunes - Sábado 9:00 - 18:00 <br />
+          Dom: Cerrado
+        </p>
+        <span><i class="fa-solid fa-phone-volume"></i>Teléfono</span>
+        <p>
+          51(1)454 3421 <br />
+          (+51) 927 372 372
+        </p>
+      </div>
+    </footer>
+
+    <footer class="copy">
+      <p>
+        Made with <span><i class="fa-solid fa-heart"></i></span> by Miriam
+        Molina
+      </p>
+    </footer>
+  </body>
+</html>

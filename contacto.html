@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link href="css/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="Imagenes/favicon.png" />
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6d4a820be5.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">
+        <a href="index.html"
+          ><img src="Imagenes/logo-carwash.png" alt="Logo carwash"
+        /></a>
+      </h1>
+
+      <div class="redes">
+        <a><i class="fa-brands fa-facebook-f"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a><i class="fa-brands fa-whatsapp"></i></a>
+        <a><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <button class="button-primary">Cotizar</button>
+    </header>
+    <div class="top-bar">
+      <button
+        id="burger"
+        class="hamburger hamburger--collapse"
+        type="button"
+        onclick="toggleMenu()"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <nav id="menu-mob" class="menu menu-mob">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contactanos</a></li>
+      </ul>
+    </nav>
+    <main>
+        <div class="banner-contacto">
+            <h2>CONTÁCTANOS</h2>
+        </div>
+        <section class="seccion-contacto">
+            <div class="formulario">
+                <form action="">
+                    <label for="nombre"><span>* </span><b>NOMBRE</b></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Juan" required="true" />
+
+                    <label for="apellido"><span>* </span><b>APELLIDO</b></label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Perez" required="true" />
+
+                    <label for="e-mail"><span>* </span><b>CORREO ELECTRÓNICO</b></label>
+                    <input type="email" id="e-mail" name="e-mail" placeholder="ejemplo@mail.com" required="true" />
+
+                    <label for="cel"><span>* </span><b>NÚMERO TEL MÓVIL</b></label>
+                    <input type="tel" pattern="[0-9]{9}" name="tel" placeholder="983238923" id="cel" required="true" />
+
+                    <label><b>ELIGE LOS SERVICIOS QUE DESEAS:</b></label><br>
+                    <div>
+                        <input type="checkbox" id="servicio" name="servicio" value="encerado">
+                        <label for="servicio">Encerado</label> <br>
+
+                        <input type="checkbox" id="servicio" name="servicio" value="lavado-motor">
+                        <label for="servicio">Lavado de Motor</label><br>
+
+                        <input type="checkbox" id="servicio" name="servicio" value="limpieza-desinfeccion">
+                        <label for="servicio">Limpieza y desinfección</label><br>
+
+                        <input type="checkbox" id="servicio" name="servicio" value="tratamiento-pintura">
+                        <label for="servicio">Tratamiento de Pintura</label><br>
+
+                        <input type="checkbox" id="servicio" name="servicio" value="tratamiento-pintura">
+                        <label for="servicio">Otro</label><br>
+
+                    </div>
+
+                    <label><b>DETALLE:</b></label>
+                    <textarea name="detalle" id="detalle" 
+                        placeholder="Describe con mayor detalle tu pedido para brindarte toda la información detallada."></textarea>
+                    
+                    <button class="button-primary">Enviar</button>
+                    
+                </form>
+            </div>
+            <div class="direccion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.9216554251334!2d-77.00052808618297!3d-12.11751289142025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c842bd2342fb%3A0x7e3183f45f461207!2sSan%20Isidro!5e0!3m2!1ses-419!2spe!4v1633752824255!5m2!1ses-419!2spe"
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer id="prefooter">
+      <div class="pie">
+        <img src="Imagenes/logo-carw.png" alt="Logo Deluxe Carwash" />
+        <p>
+          Deja el cuidado de tu auto en manos de especialistas de 1er nivel en
+          el cuidado integral de vehículos. <br />
+          Más de 10 años de experiencia en el mercado a nivel local.
+        </p>
+      </div>
+      <div class="pie">
+        <h3>SERVICIOS</h3>
+        <ul>
+          <a href="#">
+            <li>Servicios Básicos</li>
+          </a>
+          <a href="#">
+            <li>Limpieza Interior</li>
+          </a>
+          <a href="#">
+            <li>Limpieza Exterior</li>
+          </a>
+          <a href="#">
+            <li>Paquetes de Limpieza</li>
+          </a>
+          <a href="#">
+            <li>Tratamientos de Pintura</li>
+          </a>
+          <a href="#">
+            <li>Tratamiento cerámico</li>
+          </a>
+          <a href="#">
+            <li>Planchado y Pintura</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="pie">
+        <h3>MENÚ</h3>
+        <ul>
+          <a href="index.html">
+            <li>Inicio</li>
+          </a>
+          <a href="nosotros.html">
+            <li>Nosotros</li>
+          </a>
+          <a href="servicios.html">
+            <li>Servicios</li>
+          </a>
+          <a href="contacto.html">
+            <li>Contáctanos</li>
+          </a>
+        </ul>
+      </div>
+      <div class="pie">
+        <h3>CONTACTO</h3>
+        <span><i class="fa-solid fa-location-dot"></i>Dirección</span>
+        <p>
+          Av. Salaverry 757-San Isidro <br />
+          (Al costado del Banco BCP)
+        </p>
+        <span
+          ><i class="fa-solid fa-clock-rotate-left"></i>Horarios de
+          Atención</span
+        >
+        <p>
+          Lunes - Sábado 9:00 - 18:00 <br />
+          Dom: Cerrado
+        </p>
+        <span><i class="fa-solid fa-phone-volume"></i>Teléfono</span>
+        <p>
+          51(1)454 3421 <br />
+          (+51) 927 372 372
+        </p>
+      </div>
+    </footer>
+
+    <footer class="copy">
+      <p>
+        Made with <span><i class="fa-solid fa-heart"></i></span> by Miriam
+        Molina
+      </p>
+    </footer>
+  </body>
+</body>
+
+</html>
